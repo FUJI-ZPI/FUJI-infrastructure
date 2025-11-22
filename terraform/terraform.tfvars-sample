@@ -1,0 +1,10 @@
+DOMAIN_NAME="fuji-backend-domain-address.abc"
+
+SERVICE_DB_LOGIN="postgres"
+SERVICE_DB_PASSWORD="root"
+SERVICE_DB_NAME="fuji"
+
+JWT_SECRET="change-me-or-generate-a-secure-random-value"
+GOOGLE_CLIENT_ID="your-google-client-id.apps.googleusercontent.com"
+
+OPENAI_API_KEY="your-openai-api-key"
