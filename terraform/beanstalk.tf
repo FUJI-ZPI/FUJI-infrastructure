@@ -196,10 +196,17 @@ resource "aws_elastic_beanstalk_environment" "fuji_env" {
     name      = "JWT_SECRET"
     value     = var.JWT_SECRET
   }
+
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "GOOGLE_CLIENT_ID"
     value     = var.GOOGLE_CLIENT_ID
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "OPENAI_API_KEY"
+    value     = var.OPENAI_API_KEY
   }
 
   setting {
