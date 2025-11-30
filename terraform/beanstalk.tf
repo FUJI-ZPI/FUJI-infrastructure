@@ -111,14 +111,12 @@ resource "aws_elastic_beanstalk_environment" "fuji_env" {
     name      = "SPRING_PROFILES_ACTIVE"
     value     = "prod" # Aktywuje @Profile("prod") w Javie
   }
-  # gdyby było za mało pamięci:
-/*
-    setting {
+
+  setting {
     namespace = "aws:autoscaling:launchconfiguration"
     name      = "InstanceType"
-    value     = "t3.small" # Zamiast domyślnego t3.micro. t3.small ma 2 GiB RAM.
+    value     = "t3.small" # Zamiast domyślnego t3.micro. t3.small ma 2 GiB RAM
   }
-*/
 
   setting {
     namespace = "aws:elbv2:listener:443"
